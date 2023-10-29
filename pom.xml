@@ -21,12 +21,12 @@
         <maven.deploy.skip>true</maven.deploy.skip>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- WebLogic -->
-        <version.wls.server.pom>12.2.1-0-0</version.wls.server.pom>
-        <version.wls.maven.plugin>12.2.1-0-0</version.wls.maven.plugin>
+        <version.wls.server.pom>14.1.1-0-0</version.wls.server.pom>
+        <version.wls.maven.plugin>14.1.1-0-0</version.wls.maven.plugin>
     </properties>
 
     <modules>
-        <module>ejb</module>
+<!--        <module>ejb</module>-->
         <module>web</module>
         <module>ear</module>
     </modules>
@@ -34,12 +34,12 @@
     <dependencyManagement>
         <dependencies>
             <!-- Application -->
-            <dependency>
-                <groupId>chiroito.sample.ee</groupId>
-                <artifactId>weblogic-ejb</artifactId>
-                <version>${project.version}</version>
-                <type>ejb</type>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>chiroito.sample.ee</groupId>-->
+<!--                <artifactId>weblogic-ejb</artifactId>-->
+<!--                <version>${project.version}</version>-->
+<!--                <type>ejb</type>-->
+<!--            </dependency>-->
             <dependency>
                 <groupId>chiroito.sample.ee</groupId>
                 <artifactId>weblogic-web</artifactId>
@@ -138,13 +138,13 @@
                         <failOnMissingWebXml>false</failOnMissingWebXml>
                     </configuration>
                 </plugin>
-                <plugin>
-                    <artifactId>maven-ejb-plugin</artifactId>
-                    <version>3.0.0</version>
-                    <configuration>
-                        <ejbVersion>${version.ejb}</ejbVersion>
-                    </configuration>
-                </plugin>
+<!--                <plugin>-->
+<!--                    <artifactId>maven-ejb-plugin</artifactId>-->
+<!--                    <version>3.0.0</version>-->
+<!--                    <configuration>-->
+<!--                        <ejbVersion>${version.ejb}</ejbVersion>-->
+<!--                    </configuration>-->
+<!--                </plugin>-->
                 <plugin>
                     <artifactId>maven-ear-plugin</artifactId>
                     <version>2.10.1</version>

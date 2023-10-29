@@ -36,6 +36,12 @@
             <artifactId>weblogic-server-pom</artifactId>
             <type>pom</type>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.ejb/ejb-api -->
+        <dependency>
+            <groupId>javax.ejb</groupId>
+            <artifactId>ejb-api</artifactId>
+            <version>3.0</version>
+        </dependency>
 
     </dependencies>
 
