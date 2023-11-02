@@ -42,7 +42,7 @@
 <!--            </dependency>-->
             <dependency>
                 <groupId>chiroito.sample.ee</groupId>
-                <artifactId>weblogic-web</artifactId>
+                <artifactId>was-web</artifactId>
                 <version>${project.version}</version>
                 <type>war</type>
                 <scope>compile</scope>
@@ -154,7 +154,7 @@
                         <modules>
                             <webModule>
                                 <groupId>${project.groupId}</groupId>
-                                <artifactId>weblogic-web</artifactId>
+                                <artifactId>was-web</artifactId>
                                 <contextRoot>${contextRoot}</contextRoot>
                             </webModule>
                         </modules>
